@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-gegenber">
+        <li class="text">Gegenüber</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-hausecke">
+        <li class="text">Hausecke</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-zugang">
+        <li class="text">Zugang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-garageneinfahrt">
+        <li class="text">Garageneinfahrt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-eg-gang">
+        <li class="text">EG, Gang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-eg-stiegenantritt">
+        <li class="text">EG, Stiegenantritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-eg-stiegenaustritt">
+        <li class="text">EG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-eg-ug-stiegenpodest">
+        <li class="text">EG-UG, Stiegenpodest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-ug-stiegenantritt">
+        <li class="text">UG, Stiegenantritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-ug-gang">
+        <li class="text">UG, Gang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-ug-kiwa-r">
+        <li class="text">UG, KIWA-R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-ug-fahrrad-r-1">
+        <li class="text">UG, Fahrrad-R (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-ug-fahrrad-r-2">
+        <li class="text">UG, Fahrrad-R (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-ug-keller-1">
+        <li class="text">UG, Keller (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-ug-keller-2">
+        <li class="text">UG, Keller (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-ug-keller-3">
+        <li class="text">UG, Keller (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-ug-fww-r-1">
+        <li class="text">UG, FWW-R (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-ug-fww-r-2">
+        <li class="text">UG, FWW-R (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-ug-wasserzhler">
+        <li class="text">UG, Wasserzähler</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-ug-e-raum-1">
+        <li class="text">UG, E-Raum (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-ug-e-raum-2">
+        <li class="text">UG, E-Raum (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-1og-stiegenaustritt">
+        <li class="text">1OG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-1og-top4-zugang">
+        <li class="text">1OG, Top4, Zugang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-1og-top4-gang">
+        <li class="text">1OG, Top4, Gang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-1og-top4-kiz">
+        <li class="text">1OG, Top4, KiZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-1og-top4-ez">
+        <li class="text">1OG, Top4, EZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-1og-top4-bad">
+        <li class="text">1OG, Top4, Bad</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-1og-top4-wok">
+        <li class="text">1OG, Top4, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-2og-stiegenaustritt">
+        <li class="text">2OG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-2og-top8-zugang">
+        <li class="text">2OG, Top8, Zugang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-2og-top8-gang-kiz">
+        <li class="text">2OG, Top8, Gang, KiZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-2og-top8-gang-ez">
+        <li class="text">2OG, Top8, Gang, EZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-2og-top8-gang-bad">
+        <li class="text">2OG, Top8, Gang, Bad</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-2og-top8-wok">
+        <li class="text">2OG, Top8, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-2og-top8-wok-balkon">
+        <li class="text">2OG, Top8, Wokü-Balkon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-2og-stiegenantritt">
+        <li class="text">2OG, Stiegenantritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-3og-stiegenaustritt">
+        <li class="text">3OG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-3og-top12-zugang">
+        <li class="text">3OG, Top12, Zugang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-3og-top12-gang-ez">
+        <li class="text">3OG, Top12, Gang, EZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-3og-top12-ez-balkon">
+        <li class="text">3OG, Top12, EZ-Balkon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-3og-top12-wok">
+        <li class="text">3OG, Top12, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-3og-stiegenantritt">
+        <li class="text">3OG, Stiegenantritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-4og-stiegenaustritt">
+        <li class="text">4OG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-4og-top16-zugang">
+        <li class="text">4OG, Top16, Zugang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-4og-top16-gang-kiz">
+        <li class="text">4OG, Top16, Gang, KiZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-4og-top16-gang-ez">
+        <li class="text">4OG, Top16, Gang, EZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-4og-top16-wok">
+        <li class="text">4OG, Top16, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-4og-stiegenantritt">
+        <li class="text">4OG, Stiegenantritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-5og-stiegenaustritt">
+        <li class="text">5OG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-5og-top20-zugang">
+        <li class="text">5OG, Top20, Zugang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-5og-top20-gang">
+        <li class="text">5OG, Top20, Gang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-5og-top20-wok">
+        <li class="text">5OG, Top20, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-5og-stiegenantritt">
+        <li class="text">5OG, Stiegenantritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-1dg-stiegenaustritt">
+        <li class="text">1DG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-1dg-top22-wok">
+        <li class="text">1DG, Top22, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-1dg-top22-balkon">
+        <li class="text">1DG, Top22, Balkon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-1dg-top22-sz">
+        <li class="text">1DG, Top22, SZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-1dg-top22-terrasse">
+        <li class="text">1DG, Top22, Terrasse</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-1dg-gang">
+        <li class="text">1DG, Gang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-1dg-top23-vr">
+        <li class="text">1DG, Top23, VR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-1dg-top23-ez">
+        <li class="text">1DG, Top23, EZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-1dg-top23-gang">
+        <li class="text">1DG, Top23, Gang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-1dg-top23-wok">
+        <li class="text">1DG, Top23, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-1dg-stiegenantritt">
+        <li class="text">1DG, Stiegenantritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-1dg-top24-vr">
+        <li class="text">1DG, Top24, VR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-1dg-top24-wok">
+        <li class="text">1DG, Top24, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-1dg-top24-sz">
+        <li class="text">1DG, Top24, SZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-2dg-stiegenaustritt">
+        <li class="text">2DG, Stiegenaustritt</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-2dg-gang">
+        <li class="text">2DG, Gang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-2dg-top25-vr-wok">
+        <li class="text">2DG, Top25, VR, WoKü</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-2dg-top25terrasse">
+        <li class="text">2DG, Top25.Terrasse</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-2dg-top25-dachterrasse">
+        <li class="text">2DG, Top25, Dachterrasse</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-2dg-top25-gang-ez">
+        <li class="text">2DG, Top25, Gang, EZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-2dg-top25-gang-kiz-bad">
+        <li class="text">2DG, Top25, Gang, KiZ, Bad</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-2dg-top26-vr-kche">
+        <li class="text">2DG, Top26, VR, Küche</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-2dg-top26-wz">
+        <li class="text">2DG, Top26, WZ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-2dg-top26-terrasse">
+        <li class="text">2DG, Top26, Terrasse</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-2dg-top26-sz">
+        <li class="text">2DG, Top26, SZ</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
